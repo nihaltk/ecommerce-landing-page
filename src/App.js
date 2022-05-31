@@ -7,6 +7,7 @@ import Data from "./components/Data"
 import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
+import Home from "./components/MainPage/Home"
 
 function App() {
   /*
@@ -71,6 +72,7 @@ function App() {
     <>
       <Router>
         <Header CartItem={CartItem} />
+        <Home />
         <Switch>
           <Route path='/' exact>
             <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
