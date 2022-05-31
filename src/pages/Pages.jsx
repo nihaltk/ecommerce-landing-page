@@ -10,8 +10,7 @@ import Wrapper from "../components/wrapper/Wrapper"
 const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
   return (
     <>
-      <Home />
-      {/* CartItem={CartItem} */}
+      <Home CartItem={CartItem} />
       <TopCate />
       <FlashDeals productItems={productItems} addToCart={addToCart} />
       <Annocument />
